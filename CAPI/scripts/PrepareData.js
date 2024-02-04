@@ -60,7 +60,7 @@ function initCurrentTimeVars() {
   console.log("current_period: ", current_period);
   switch(current_period) {
     default:
-      total_quota = 800;
+      total_quota = 1000;
       break;
   }
 }
