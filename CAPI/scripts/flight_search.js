@@ -100,12 +100,12 @@ function save_flight_value(question, value) {
   console.log("question:", question);
   console.log("value:", value);
 
-  api.fn.answers({Q1D_show:  value.Show});
-  api.fn.answers({Q1D_airline_name:   value.Airline}); //airline name
-  api.fn.answers({Q1D_airline:   value.AirlineCode}); //airline code
-  api.fn.answers({Q1D_flight_number:   value.Flight});
-  api.fn.answers({Q1D_destination:   value.Dest});
-  api.fn.answers({Q1D_destination_name: value.DestName});
+  api.fn.answers({Q9_show:  value.Show});
+  api.fn.answers({Q9_airline_name:   value.Airline}); //airline name
+  api.fn.answers({Q9_airline:   value.AirlineCode}); //airline code
+  api.fn.answers({Q9_flight_number:   value.Flight});
+  api.fn.answers({Q9_destination:   value.Dest});
+  api.fn.answers({Q9_destination_name: value.DestName});
   
   console.log("save flight  done!");
 }

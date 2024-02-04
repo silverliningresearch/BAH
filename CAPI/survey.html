@@ -36,6 +36,13 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://survalyzer.survalyzer.eu/assets/survalyzer-survey.js"></script>
+    
+    <script src="data/BAH_departures_flight_list.js"></script>
+    <script src="scripts/flight_search.js"></script>
+    <script src="scripts/auto_complete_ui.js"></script>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.2/themes/smoothness/jquery-ui.css">
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
 
     <script>
         window.addEventListener('load', function () {
@@ -43,8 +50,15 @@
           const listSearchHandler = () => {
             console.log("Current Page Index: ", api.fn.getCurrentPageIndex() );
             
-            if ( api.fn.getCurrentPageIndex()==0) {
-             
+            
+            switch (api.fn.getCurrentPageIndex()) {
+              case 12:
+                show_flight_search_box("Q9"); //flight
+                break;
+
+                default:
+                aui_hide_external_search_box();
+                break;
             }
 
         };          
