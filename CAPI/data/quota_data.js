@@ -1,105 +1,389 @@
      let quota_info = ` 
 [
-    {"quota_id": "QR-LHR", "Dest": "LHR", "Quota": "32", "period_id": "2024-02"},
-    {"quota_id": "QR-BKK", "Dest": "BKK", "Quota": "26", "period_id": "2024-02"},
-    {"quota_id": "QR-DXB", "Dest": "DXB", "Quota": "18", "period_id": "2024-02"},
-    {"quota_id": "QR-JED", "Dest": "JED", "Quota": "18", "period_id": "2024-02"},
-    {"quota_id": "QR-RUH", "Dest": "RUH", "Quota": "16", "period_id": "2024-02"},
-    {"quota_id": "QR-CMB", "Dest": "CMB", "Quota": "16", "period_id": "2024-02"},
-    {"quota_id": "QR-KWI", "Dest": "KWI", "Quota": "13", "period_id": "2024-02"},
-    {"quota_id": "QR-CAI", "Dest": "CAI", "Quota": "13", "period_id": "2024-02"},
-    {"quota_id": "QR-MAN", "Dest": "MAN", "Quota": "13", "period_id": "2024-02"},
-    {"quota_id": "QR-MNL", "Dest": "MNL", "Quota": "12", "period_id": "2024-02"},
-    {"quota_id": "QR-CGK", "Dest": "CGK", "Quota": "12", "period_id": "2024-02"},
-    {"quota_id": "QR-HKT", "Dest": "HKT", "Quota": "12", "period_id": "2024-02"},
-    {"quota_id": "QR-DPS", "Dest": "DPS", "Quota": "12", "period_id": "2024-02"},
-    {"quota_id": "QR-CDG", "Dest": "CDG", "Quota": "12", "period_id": "2024-02"},
-    {"quota_id": "FZ-DXB", "Dest": "DXB", "Quota": "12", "period_id": "2024-02"},
-    {"quota_id": "QR-MLE", "Dest": "MLE", "Quota": "12", "period_id": "2024-02"},
-    {"quota_id": "QR-FRA", "Dest": "FRA", "Quota": "12", "period_id": "2024-02"},
-    {"quota_id": "QR-SIN", "Dest": "SIN", "Quota": "11", "period_id": "2024-02"},
-    {"quota_id": "QR-BCN", "Dest": "BCN", "Quota": "11", "period_id": "2024-02"},
-    {"quota_id": "QR-JFK", "Dest": "JFK", "Quota": "11", "period_id": "2024-02"},
-    {"quota_id": "QR-IKA", "Dest": "IKA", "Quota": "11", "period_id": "2024-02"},
-    {"quota_id": "QR-AUH", "Dest": "AUH", "Quota": "10", "period_id": "2024-02"},
-    {"quota_id": "QR-DAC", "Dest": "DAC", "Quota": "10", "period_id": "2024-02"},
-    {"quota_id": "QR-FCO", "Dest": "FCO", "Quota": "10", "period_id": "2024-02"},
-    {"quota_id": "QR-MXP", "Dest": "MXP", "Quota": "10", "period_id": "2024-02"},
-    {"quota_id": "QR-SHJ", "Dest": "SHJ", "Quota": "10", "period_id": "2024-02"},
-    {"quota_id": "G9-SHJ", "Dest": "SHJ", "Quota": "10", "period_id": "2024-02"},
-    {"quota_id": "QR-KTM", "Dest": "KTM", "Quota": "10", "period_id": "2024-02"},
-    {"quota_id": "QR-MCT", "Dest": "MCT", "Quota": "10", "period_id": "2024-02"},
-    {"quota_id": "QR-NBO", "Dest": "NBO", "Quota": "9", "period_id": "2024-02"},
-    {"quota_id": "QR-DMM", "Dest": "DMM", "Quota": "9", "period_id": "2024-02"},
-    {"quota_id": "QR-ISB", "Dest": "ISB", "Quota": "9", "period_id": "2024-02"},
-    {"quota_id": "QR-LHE", "Dest": "LHE", "Quota": "9", "period_id": "2024-02"},
-    {"quota_id": "QR-IST", "Dest": "IST", "Quota": "9", "period_id": "2024-02"},
-    {"quota_id": "QR-JNB", "Dest": "JNB", "Quota": "8", "period_id": "2024-02"},
-    {"quota_id": "QR-MEL", "Dest": "MEL", "Quota": "8", "period_id": "2024-02"},
-    {"quota_id": "QR-AMM", "Dest": "AMM", "Quota": "8", "period_id": "2024-02"},
-    {"quota_id": "QR-MAD", "Dest": "MAD", "Quota": "8", "period_id": "2024-02"},
-    {"quota_id": "EY-AUH", "Dest": "AUH", "Quota": "8", "period_id": "2024-02"},
-    {"quota_id": "QR-AMS", "Dest": "AMS", "Quota": "8", "period_id": "2024-02"},
-    {"quota_id": "QR-BAH", "Dest": "BAH", "Quota": "8", "period_id": "2024-02"},
-    {"quota_id": "QR-GRU", "Dest": "GRU", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-SGN", "Dest": "SGN", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-BER", "Dest": "BER", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-HAN", "Dest": "HAN", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-BEY", "Dest": "BEY", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "GF-BAH", "Dest": "BAH", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-MUC", "Dest": "MUC", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-LOS", "Dest": "LOS", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-OSL", "Dest": "OSL", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-DFW", "Dest": "DFW", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-KHI", "Dest": "KHI", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-HKG", "Dest": "HKG", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "6E-HYD", "Dest": "HYD", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "MH-KUL", "Dest": "KUL", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-KUL", "Dest": "KUL", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-CPT", "Dest": "CPT", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-EDI", "Dest": "EDI", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-ZRH", "Dest": "ZRH", "Quota": "7", "period_id": "2024-02"},
-    {"quota_id": "QR-DEL", "Dest": "DEL", "Quota": "6", "period_id": "2024-02"},
-    {"quota_id": "QR-CPH", "Dest": "CPH", "Quota": "6", "period_id": "2024-02"},
-    {"quota_id": "QR-DUS", "Dest": "DUS", "Quota": "6", "period_id": "2024-02"},
-    {"quota_id": "QR-PER", "Dest": "PER", "Quota": "6", "period_id": "2024-02"},
-    {"quota_id": "QR-SYD", "Dest": "SYD", "Quota": "6", "period_id": "2024-02"},
-    {"quota_id": "QR-DUB", "Dest": "DUB", "Quota": "6", "period_id": "2024-02"},
-    {"quota_id": "QR-MIA", "Dest": "MIA", "Quota": "6", "period_id": "2024-02"},
-    {"quota_id": "QR-COK", "Dest": "COK", "Quota": "6", "period_id": "2024-02"},
-    {"quota_id": "QR-MED", "Dest": "MED", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-IAD", "Dest": "IAD", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-ATH", "Dest": "ATH", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-BGW", "Dest": "BGW", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "6E-BOM", "Dest": "BOM", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-VIE", "Dest": "VIE", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-PKX", "Dest": "PKX", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-CAN", "Dest": "CAN", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-BRU", "Dest": "BRU", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-ICN", "Dest": "ICN", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-SVO", "Dest": "SVO", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "QR-WAW", "Dest": "WAW", "Quota": "5", "period_id": "2024-02"},
-    {"quota_id": "BS-DAC", "Dest": "DAC", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "6E-DEL", "Dest": "DEL", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "H9-KTM", "Dest": "KTM", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-LGW", "Dest": "LGW", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-ATL", "Dest": "ATL", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-BNE", "Dest": "BNE", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-ORD", "Dest": "ORD", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-PVG", "Dest": "PVG", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-SEA", "Dest": "SEA", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-YUL", "Dest": "YUL", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-TBS", "Dest": "TBS", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-EBL", "Dest": "EBL", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "J9-KWI", "Dest": "KWI", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "XY-JED", "Dest": "JED", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-OTP", "Dest": "OTP", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "XY-RUH", "Dest": "RUH", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "BA-LGW", "Dest": "LGW", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-BLR", "Dest": "BLR", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "QR-BOM", "Dest": "BOM", "Quota": "4", "period_id": "2024-02"},
-    {"quota_id": "TK-IST", "Dest": "IST", "Quota": "4", "period_id": "2024-02"}
-    
+    {
+        "period_id": "2024-02",
+        "quota_id": "3L-AUH",
+        "Dest": "AUH",
+        "Quota": 20
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "6E-BOM",
+        "Dest": "BOM",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "AI-DEL",
+        "Dest": "DEL",
+        "Quota": 7
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "BA-LHR",
+        "Dest": "LHR",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "EK-DXB",
+        "Dest": "DXB",
+        "Quota": 28
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "EY-AUH",
+        "Dest": "AUH",
+        "Quota": 27
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "FZ-DXB",
+        "Dest": "DXB",
+        "Quota": 50
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "G9-SHJ",
+        "Dest": "SHJ",
+        "Quota": 30
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-AMM",
+        "Dest": "AMM",
+        "Quota": 13
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-ATH",
+        "Dest": "ATH",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-AUH",
+        "Dest": "AUH",
+        "Quota": 17
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-BKK",
+        "Dest": "BKK",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-BLR",
+        "Dest": "BLR",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-BOM",
+        "Dest": "BOM",
+        "Quota": 20
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-CAI",
+        "Dest": "CAI",
+        "Quota": 19
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-CCJ",
+        "Dest": "CCJ",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-CDG",
+        "Dest": "CDG",
+        "Quota": 9
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-CMN",
+        "Dest": "CMN",
+        "Quota": 5
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-COK",
+        "Dest": "COK",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-DAC",
+        "Dest": "DAC",
+        "Quota": 13
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-DEL",
+        "Dest": "DEL",
+        "Quota": 20
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-DME",
+        "Dest": "DME",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-DMM",
+        "Dest": "DMM",
+        "Quota": 39
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-DOH",
+        "Dest": "DOH",
+        "Quota": 28
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-DXB",
+        "Dest": "DXB",
+        "Quota": 50        
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-FRA",
+        "Dest": "FRA",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-GOI",
+        "Dest": "GOI",
+        "Quota": 5
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-HYD",
+        "Dest": "HYD",
+        "Quota": 15
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-ISB",
+        "Dest": "ISB",
+        "Quota": 7
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-IST",
+        "Dest": "IST",
+        "Quota": 18
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-JED",
+        "Dest": "JED",
+        "Quota": 39
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-KHI",
+        "Dest": "KHI",
+        "Quota": 13
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-KWI",
+        "Dest": "KWI",
+        "Quota": 39
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-LHE",
+        "Dest": "LHE",
+        "Quota": 5
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-LHR",
+        "Dest": "LHR",
+        "Quota": 20
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-LYP",
+        "Dest": "LYP",
+        "Quota": 5
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-MAA",
+        "Dest": "MAA",
+        "Quota": 14
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-MAN",
+        "Dest": "MAN",
+        "Quota": 6
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-MCT",
+        "Dest": "MCT",
+        "Quota": 13
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-MED",
+        "Dest": "MED",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-MLE",
+        "Dest": "MLE",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-MNL",
+        "Dest": "MNL",
+        "Quota": 13
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-MUX",
+        "Dest": "MUX",
+        "Quota": 9
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-MXP",
+        "Dest": "MXP",
+        "Quota": 6
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-PEW",
+        "Dest": "PEW",
+        "Quota": 6
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-RUH",
+        "Dest": "RUH",
+        "Quota": 49
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-SKT",
+        "Dest": "SKT",
+        "Quota": 7
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "GF-TRV",
+        "Dest": "TRV",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "IX-CCJ",
+        "Dest": "CCJ",
+        "Quota": 6
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "IX-COK",
+        "Dest": "COK",
+        "Quota": 5
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "J9-KWI",
+        "Dest": "KWI",
+        "Quota": 16
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "KU-KWI",
+        "Dest": "KWI",
+        "Quota": 20
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "LH-RUH",
+        "Dest": "RUH",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "MS-CAI",
+        "Dest": "CAI",
+        "Quota": 8
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "OV-MCT",
+        "Dest": "MCT",
+        "Quota": 9
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "PC-SAW",
+        "Dest": "SAW",
+        "Quota": 9
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "QR-DOH",
+        "Dest": "DOH",
+        "Quota": 47
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "RJ-AMM",
+        "Dest": "AMM",
+        "Quota": 5
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "SV-JED",
+        "Dest": "JED",
+        "Quota": 7
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "SV-RUH",
+        "Dest": "RUH",
+        "Quota": 7
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "TK-IST",
+        "Dest": "IST",
+        "Quota": 12
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "TK-SAW",
+        "Dest": "SAW",
+        "Quota": 10
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "WY-MCT",
+        "Dest": "MCT",
+        "Quota": 14
+    },
+    {
+        "period_id": "2024-02",
+        "quota_id": "XY-RUH",
+        "Dest": "RUH",
+        "Quota": 11
+    }
 
     
 ]    
